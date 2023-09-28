@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="502.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Button fx:id="loginButton" layoutX="157.0" layoutY="251.0" mnemonicParsing="false" onAction="#loginButtonPushed" prefHeight="25.0" prefWidth="113.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="UserNameLabel" layoutX="133.0" layoutY="115.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="UserPasswordLabel" layoutX="133.0" layoutY="177.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoginLabel" layoutX="122.0" layoutY="29.0" prefHeight="49.0" prefWidth="222.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidLoginLabel" layoutX="115.0" layoutY="317.0" prefHeight="17.0" prefWidth="204.0" textAlignment="CENTER" />
+      <Label fx:id="ZoneIdLabel" layoutX="116.0" layoutY="370.0" prefHeight="17.0" prefWidth="204.0" textAlignment="CENTER" />
+      <TextArea fx:id="UserText" layoutX="130.0" layoutY="140.0" prefHeight="17.0" prefWidth="188.0" />
+      <TextArea fx:id="PasswordText" layoutX="130.0" layoutY="202.0" prefHeight="17.0" prefWidth="188.0" />
+      <Label fx:id="langaugelable" layoutX="114.0" layoutY="342.0" prefHeight="17.0" prefWidth="204.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

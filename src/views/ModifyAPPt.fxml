@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentModifyController">
+    <children>
+        <Label layoutX="189.0" layoutY="25.0" text="Modify Appointment">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="84.0" text="Appointment  ID" />
+        <Label layoutX="42.0" layoutY="309.0" prefHeight="17.0" prefWidth="33.0" text="Date" />
+        <DatePicker fx:id="datePicker" layoutX="139.0" layoutY="305.0" prefHeight="25.0" prefWidth="200.0" />
+        <Label layoutX="143.0" layoutY="533.0" />
+      <Label layoutX="41.0" layoutY="132.0" text="Title" />
+      <Label layoutX="39.0" layoutY="181.0" text="Description " />
+      <ComboBox fx:id="typeDropdown" layoutX="138.0" layoutY="219.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="39.0" layoutY="223.0" text="Type" />
+      <Label layoutX="39.0" layoutY="268.0" text="Location" />
+      <ComboBox fx:id="startTimeDropdown" layoutX="138.0" layoutY="347.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="351.0" prefHeight="17.0" prefWidth="64.0" text="Start Time" />
+      <ComboBox fx:id="endTimeDropdown" layoutX="138.0" layoutY="390.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="394.0" prefHeight="17.0" prefWidth="64.0" text="End Time" />
+      <ComboBox fx:id="customerIdDropdown" layoutX="138.0" layoutY="433.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="437.0" prefHeight="17.0" prefWidth="73.0" text="Customer ID" />
+      <ComboBox fx:id="contactDropdown" layoutX="138.0" layoutY="474.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="477.0" prefHeight="17.0" prefWidth="73.0" text="Contact" />
+      <ComboBox fx:id="userIdDropdown" layoutX="138.0" layoutY="517.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="36.0" layoutY="520.0" prefHeight="17.0" prefWidth="73.0" text="User ID" />
+      <Button fx:id="savebutton" layoutX="137.0" layoutY="592.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="25.0" prefWidth="52.0" text="Save" />
+      <Button fx:id="cancelbutton" layoutX="285.0" layoutY="592.0" mnemonicParsing="false" onAction="#CancelOnAction" text="Cancel" />
+      <TextArea fx:id="appointmentIdField" layoutX="140.0" layoutY="74.0" disable="true" editable="false"  prefHeight="0.0" prefWidth="200.0" />
+      <TextArea fx:id="loctionField" layoutX="138.0" layoutY="258.0" prefHeight="0.0" prefWidth="200.0" />
+      <TextArea fx:id="titleField" layoutX="140.0" layoutY="121.0" prefHeight="0.0" prefWidth="200.0" />
+      <TextArea fx:id="descriptionField" layoutX="140.0" layoutY="172.0" prefHeight="0.0" prefWidth="200.0" />
+      <Label fx:id="tiltleerror" layoutX="349.0" layoutY="132.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="descriptionerror" layoutX="349.0" layoutY="177.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="typeerror" layoutX="349.0" layoutY="226.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="loctionerror" layoutX="349.0" layoutY="267.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="dateerror" layoutX="349.0" layoutY="311.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="starttimeerror" layoutX="349.0" layoutY="353.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="endtimeerror" layoutX="349.0" layoutY="397.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="customeriderror" layoutX="349.0" layoutY="435.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="contacterror" layoutX="349.0" layoutY="477.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+      <Label fx:id="useriderror" layoutX="349.0" layoutY="521.0" prefHeight="17.0" prefWidth="238.0" text="Label" />
+    </children>
+</AnchorPane>
